@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinayak Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-TzHbRPZJGm1Gf/8yWb6iPb5gJFn+xE8N4Y5x7g/fW+KcVhOk7TYaFVoOQ2Kb7eXuc0MMLlsqRZZtKX5FJ9+JVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Vinayak Portfolio</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero" data-aos="fade-in">
+    <div class="hero-content">
+      <img src="profile_imagee.jpeg" alt="Vinayak" class="profile-pic" />
+      <h1>Hi, I'm Vinayak Singh</h1>
+      <p>Creative Web Developer & Designer</p>
+      <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am passionate about building beautiful, functional websites and web applications. With a strong background in HTML, CSS, and JavaScript, I bring ideas to life on the web.</p>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Modern Portfolio</h3>
+      <p>Built with HTML, CSS (Dark Theme), and JavaScript animations.</p>
+    </div>
+    <div class="project-card">
+      <h3>Interactive Resume</h3>
+      <p>Personal resume with download and live preview options.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Photo Editing</h3>
+        <p>Advanced editing using Photoshop and Lightroom.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Video Editing</h3>
+        <p>Editing with Premiere Pro and mobile apps.</p>
+      </div>
+      <div class="skill-box">
+        <h3>MS Office</h3>
+        <p>Proficient in Word, Excel, PowerPoint.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Design Tools</h3>
+        <p>Experienced with Canva, Figma, Photoshop.</p>
+      </div>
+      <div class="skill-box">
+        <h3>UI/UX</h3>
+        <p>User-centered design and wireframing skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i><a href="mailto:vinayaksingh630666@gmail.com"> vinayaksingh630666@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i><a href="tel:+918433364873"> +91-8433364873</a></p>
+      <p><i class="fas fa-globe"></i><a href="https://www.vinayaksingh.in" target="_blank"> www.vinayaksingh.in</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vinayak Singh. All Rights Reserved.</p>
+   
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
